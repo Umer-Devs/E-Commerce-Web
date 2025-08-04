@@ -1,0 +1,5 @@
+export {default as NavbarOne} from "./HeaderOne/HeaderOne"
+export {default as ProductSlider} from "./ProductSlider/ProductSlider"
+export {default as WhyChooseUs} from "./WhyChooseUs/WhyChooseUs"
+export {default as CtaButton} from "./CtaButton/CtaButton"
+export {default as Footer} from "./Footer/Footer"
