@@ -6,7 +6,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { ArrowRightFromLine } from 'lucide-react';
 import { motion } from 'framer-motion';
-
 const HomePage = () => {
   const settings = {
     dots: true,
@@ -29,9 +28,7 @@ const HomePage = () => {
       },
     ],
   };
-
   const images = [HomeBanner, HomeBanner, HomeBanner];
-
  const blogItems = [
   {
     image: imgSix,
@@ -48,10 +45,7 @@ const HomePage = () => {
     title: 'Decor your bedroom',
     linkText: 'Shop Now',
   },
-  // Add more objects if needed...
 ];
-
-  // Framer Motion variants for animations
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: (i) => ({
@@ -64,7 +58,6 @@ const HomePage = () => {
       },
     }),
   };
-
   return (
     <>
       {/* header component */}
@@ -99,7 +92,7 @@ const HomePage = () => {
         </div>
       </main>
       {/* section one component */}
-      <section className='custom-padding grid md:grid-cols-2 py-8'>
+      <section  className='  custom-padding grid md:grid-cols-2 py-8'>
         <h2 className='text-3xl md:text-5xl mb-3 lg:text-7xl xl:text-8xl'>
           Simply Unique/ <br className='hidden md:block' />
           Simply Better.
@@ -173,11 +166,10 @@ const HomePage = () => {
         ))}
       </section>
       {/* section seven componenet  */}
-      <CtaButton/>
+      <CtaButton/>  
       {/* section eight componenet  */}
       <Footer/>
     </>
   );
 };
-
 export default HomePage;

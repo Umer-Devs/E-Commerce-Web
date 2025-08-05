@@ -15,10 +15,7 @@ const HeaderOne = () => {
             name: "Shop",
             Link: '/shop'
         },
-        {
-            name: "Product",
-            Link: '/product'
-        },
+        
         {
             name: "Contact Us",
             Link: '/contact'
