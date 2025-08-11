@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Footer, NavbarOne } from '../../Components';
 import { Shop1 } from '../../assets';
 import { ArrowRight, ChevronDown, ShoppingCart, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ShopPage = () => {
   const [products, setProducts] = useState([]);
@@ -236,10 +237,11 @@ const ShopPage = () => {
                     </div>
                     
                     {/* Add to Cart Button */}
-                    <button className="w-full bg-primary-green hover:bg-primary-green/80 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 group-hover:shadow-lg">
+                  <Link to={`/product-page/${product.id}`}>  <button  className="w-full bg-primary-green hover:bg-primary-green/80 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 group-hover:shadow-lg">
                       <ShoppingCart className="w-4 h-4" />
                       Add to Cart
                     </button>
+                      </Link>
                   </div>
                 </div>
               ))

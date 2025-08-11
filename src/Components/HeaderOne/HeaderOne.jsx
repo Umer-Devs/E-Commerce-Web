@@ -62,7 +62,7 @@ const HeaderOne = () => {
                 </div>
             </nav>
             <nav className='custom-padding py-10 flex justify-between items-center'>
-                <h2 className='text-2xl md:text-4xl'>3legant.</h2>
+                <h2 className='text-2xl md:text-5xl'>3legant.</h2>
                 
                 {/* Desktop Navigation */}
                 <ul className='hidden md:flex items-center gap-8'>
